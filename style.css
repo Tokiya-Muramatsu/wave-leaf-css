@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .header-title {
     width: 200px;
     margin-top: 10px;
@@ -15,14 +30,6 @@
     line-height: 1.2;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #fff;
-}
 
 main {
     display: flex;
@@ -102,7 +109,7 @@ main {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-80px); /* Make the wave more intense */
+        transform: translateY(-120px); /* Make the wave more intense */
     }
 }
 
@@ -111,6 +118,6 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Adjust to match the new container width */
+        transform: translateX(-160%); /* Adjust to match the new container width */
     }
 }
