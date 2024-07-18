@@ -42,7 +42,7 @@ main {
 .wave-container {
     display: flex;
     justify-content: flex-start;
-    width: 100%; /* Make the container much wider than the viewport */
+    width: 120%; /* Make the container much wider than the viewport */
     position: relative;
     animation: move 30s linear infinite; /* Slower horizontal movement */
 }
@@ -114,7 +114,6 @@ main {
 .leaf:nth-child(15) {
     animation-delay: 2.8s;
 }
-
 .leaf:nth-child(16) {
     animation-delay: 3s;
 }
@@ -135,12 +134,52 @@ main {
     animation-delay: 3.8s;
 }
 
+.leaf:nth-child(21) {
+    animation-delay: 4s;
+}
+
+.leaf:nth-child(22) {
+    animation-delay: 4.2s;
+}
+
+.leaf:nth-child(23) {
+    animation-delay: 4.4s;
+}
+
+.leaf:nth-child(24) {
+    animation-delay: 4.6s;
+}
+
+.leaf:nth-child(25) {
+    animation-delay: 4.8s;
+}
+.leaf:nth-child(26) {
+    animation-delay: 5s;
+}
+
+.leaf:nth-child(27) {
+    animation-delay: 5.2s;
+}
+
+.leaf:nth-child(28) {
+    animation-delay: 5.4s;
+}
+
+.leaf:nth-child(29) {
+    animation-delay: 5.6s;
+}
+
+.leaf:nth-child(30) {
+    animation-delay: 5.8s;
+}
+
+
 @keyframes wave {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-120px); /* More intense vertical movement */
+        transform: translateY(-150px); /* More intense vertical movement */
     }
 }
 
@@ -149,6 +188,6 @@ main {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(0); /* Adjust to match the new container width */
+        transform: translateX(-100%); /* Adjust to match the new container width */
     }
 }
