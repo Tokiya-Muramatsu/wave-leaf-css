@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-title {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.header-title h1 {
+    color: #41b732;
+    text-align: center;
+    line-height: 1.2;
+}
