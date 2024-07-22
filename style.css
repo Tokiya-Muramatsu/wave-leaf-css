@@ -42,9 +42,13 @@ main {
 .wave-container {
     display: flex;
     justify-content: flex-start;
-    width: 120%; /* Make the container much wider than the viewport */
+    width: 120%;
+    /* コンテナをビューポートよりも広く設定 */
     position: relative;
-    animation: move 30s linear infinite; /* Slower horizontal movement */
+    animation: move 30s linear infinite;
+    /* 水平方向の動きを遅くする */
+    margin-top: 300px;
+    /* コンテナを下に移動させる */
 }
 
 .leaf {
@@ -52,9 +56,11 @@ main {
     margin: 0 20px;
     position: relative;
     display: inline-block;
-    animation: wave 4s infinite ease-in-out; /* More intense vertical movement */
+    animation: wave 4s infinite ease-in-out;
+     /* 垂直方向の動きを強くする */
 }
 
+/* 各leaf要素に異なるアニメーション遅延を設定 */
 .leaf:nth-child(1) {
     animation-delay: 0s;
 }
@@ -114,6 +120,7 @@ main {
 .leaf:nth-child(15) {
     animation-delay: 2.8s;
 }
+
 .leaf:nth-child(16) {
     animation-delay: 3s;
 }
@@ -153,6 +160,7 @@ main {
 .leaf:nth-child(25) {
     animation-delay: 4.8s;
 }
+
 .leaf:nth-child(26) {
     animation-delay: 5s;
 }
@@ -175,11 +183,15 @@ main {
 
 
 @keyframes wave {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-150px); /* More intense vertical movement */
+        transform: translateY(-180px); 
+        /* 垂直方向の動きを強くする */
     }
 }
 
@@ -187,7 +199,9 @@ main {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(-100%); /* Adjust to match the new container width */
+        transform: translateX(-100%);
+        /* 新しいコンテナ幅に合わせて調整 */
     }
 }
