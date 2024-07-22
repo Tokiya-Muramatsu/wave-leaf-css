@@ -40,12 +40,12 @@ main {
 }
 
 .wave-container {
+    width: 100%; /* コンテナをビューポートよりも広く設定 */
     display: flex;
     justify-content: flex-start;
-    width: 120%;
     /* コンテナをビューポートよりも広く設定 */
     position: relative;
-    animation: move 30s linear infinite;
+    animation: move 20s linear infinite;
     /* 水平方向の動きを遅くする */
     margin-top: 300px;
     /* コンテナを下に移動させる */
