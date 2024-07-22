@@ -40,15 +40,21 @@ main {
 }
 
 .wave-container {
-    width: 100%; /* コンテナをビューポートよりも広く設定 */
+    width: 200%; /* コンテナをビューポートよりも広く設定 */
     display: flex;
     justify-content: flex-start;
     /* コンテナをビューポートよりも広く設定 */
     position: relative;
-    animation: move 20s linear infinite;
+    animation: move 30s linear infinite;
     /* 水平方向の動きを遅くする */
     margin-top: 300px;
     /* コンテナを下に移動させる */
+}
+
+.wave-inner {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .leaf {
@@ -56,6 +62,7 @@ main {
     margin: 0 20px;
     position: relative;
     display: inline-block;
+    bottom: 0;
     animation: wave 4s infinite ease-in-out;
      /* 垂直方向の動きを強くする */
 }
@@ -201,7 +208,7 @@ main {
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
         /* 新しいコンテナ幅に合わせて調整 */
     }
 }
