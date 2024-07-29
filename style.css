@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 header {
@@ -43,7 +49,7 @@ main {
     width: 200%;
     /* コンテナをビューポートよりも広く設定 */
     position: relative;
-    animation: move 30s linear infinite;
+    animation: move 10s linear infinite;
     /* 水平方向の動きを遅くする */
     margin-top: 300px;
     /* コンテナを下に移動させる */
@@ -53,6 +59,7 @@ main {
     display: flex;
     justify-content: flex-start;
     width: 200%;
+    background-color: #8b4605;
 }
 
 .leaf {
@@ -63,6 +70,12 @@ main {
     bottom: 0;
     animation: wave 4s infinite ease-in-out;
      /* 垂直方向の動きを強くする */
+}
+
+/* 各画像のサイズ */
+.leaf:nth-child(even) {
+    width: 72px;
+    height: 100%;
 }
 
 /* 各leaf要素に異なるアニメーション遅延を設定 */
@@ -186,6 +199,127 @@ main {
     animation-delay: 5.8s;
 }
 
+.leaf:nth-child(31) {
+    animation-delay: 6s;
+}
+
+.leaf:nth-child(32) {
+    animation-delay: 6.2s;
+}
+
+.leaf:nth-child(33) {
+    animation-delay: 6.4s;
+}
+
+.leaf:nth-child(34) {
+    animation-delay: 6.6s;
+}
+
+.leaf:nth-child(35) {
+    animation-delay: 6.8s;
+}
+
+.leaf:nth-child(36) {
+    animation-delay: 7s;
+}
+
+.leaf:nth-child(37) {
+    animation-delay: 7.2s;
+}
+
+.leaf:nth-child(38) {
+    animation-delay: 7.4s;
+}
+
+.leaf:nth-child(39) {
+    animation-delay: 7.6s;
+}
+
+.leaf:nth-child(40) {
+    animation-delay: 7.8s;
+}
+
+.leaf:nth-child(41) {
+    animation-delay: 8s;
+}
+
+.leaf:nth-child(42) {
+    animation-delay: 8.2s;
+}
+
+.leaf:nth-child(43) {
+    animation-delay: 8.4s;
+}
+
+.leaf:nth-child(44) {
+    animation-delay: 8.6s;
+}
+
+.leaf:nth-child(45) {
+    animation-delay: 8.8s;
+}
+
+.leaf:nth-child(46) {
+    animation-delay: 9s;
+}
+
+.leaf:nth-child(47) {
+    animation-delay: 9.2s;
+}
+
+.leaf:nth-child(48) {
+    animation-delay: 9.4s;
+}
+
+.leaf:nth-child(49) {
+    animation-delay: 9.6s;
+}
+
+.leaf:nth-child(50) {
+    animation-delay: 9.8s;
+}
+
+.leaf:nth-child(51) {
+    animation-delay: 10s;
+}
+
+.leaf:nth-child(52) {
+    animation-delay: 10.2s;
+}
+
+.leaf:nth-child(53) {
+    animation-delay: 10.4s;
+}
+
+.leaf:nth-child(54) {
+    animation-delay: 10.6s;
+}
+
+.leaf:nth-child(55) {
+    animation-delay: 10.8s;
+}
+
+.leaf:nth-child(56) {
+    animation-delay: 11s;
+}
+
+.leaf:nth-child(57) {
+    animation-delay: 11.2s;
+}
+
+.leaf:nth-child(58) {
+    animation-delay: 11.4s;
+}
+
+.leaf:nth-child(59) {
+    animation-delay: 11.6s;
+}
+
+.leaf:nth-child(60) {
+    animation-delay: 11.8s;
+}
+
+
 
 @keyframes wave {
 
@@ -209,4 +343,33 @@ main {
         transform: translateX(-50%);
         /* 新しいコンテナ幅に合わせて調整 */
     }
+}
+
+@media (max-width: 768px) {
+    .wave-container {
+        width: 400%;
+        /* コンテナをビューポートよりも広く設定 */
+        position: relative;
+        animation: move 10s linear infinite;
+        /* 水平方向の動きを遅くする */
+        margin-top: 300px;
+        /* コンテナを下に移動させる */
+    }
+    .wave-inner {
+        display: flex;
+        justify-content: flex-start;
+        width: 400%;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-100%);
+            /* 新しいコンテナ幅に合わせて調整 */
+        }
+    }
+    
 }
