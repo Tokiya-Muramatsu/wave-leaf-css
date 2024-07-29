@@ -46,10 +46,10 @@ main {
 }
 
 .wave-container {
-    width: 200%;
+    width: 100vw;
     /* コンテナをビューポートよりも広く設定 */
     position: relative;
-    animation: move 10s linear infinite;
+    animation: move 15s linear infinite;
     /* 水平方向の動きを遅くする */
     margin-top: 300px;
     /* コンテナを下に移動させる */
@@ -58,7 +58,7 @@ main {
 .wave-inner {
     display: flex;
     justify-content: flex-start;
-    width: 200%;
+    /* width: 100%; */
     background-color: #8b4605;
 }
 
@@ -69,13 +69,13 @@ main {
     display: inline-block;
     bottom: 0;
     animation: wave 4s infinite ease-in-out;
-     /* 垂直方向の動きを強くする */
 }
 
 /* 各画像のサイズ */
 .leaf:nth-child(even) {
     width: 72px;
     height: 100%;
+    margin-top: 10px;
 }
 
 /* 各leaf要素に異なるアニメーション遅延を設定 */
@@ -334,6 +334,7 @@ main {
     }
 }
 
+
 @keyframes move {
     0% {
         transform: translateX(0);
@@ -347,7 +348,7 @@ main {
 
 @media (max-width: 768px) {
     .wave-container {
-        width: 400%;
+        width: 100%;
         /* コンテナをビューポートよりも広く設定 */
         position: relative;
         animation: move 10s linear infinite;
@@ -358,7 +359,7 @@ main {
     .wave-inner {
         display: flex;
         justify-content: flex-start;
-        width: 400%;
+        width: 100%;
     }
 
     @keyframes move {
