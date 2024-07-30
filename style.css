@@ -323,7 +323,7 @@ main {
     }
 
     50% {
-        transform: translateY(-180px); 
+        transform: translateY(-180px);
         /* 垂直方向の動きを強くする */
     }
 }
@@ -350,21 +350,40 @@ main {
         margin-top: 300px;
         /* コンテナを下に移動させる */
     }
+
     .wave-inner {
         display: flex;
         justify-content: flex-start;
         width: 100%;
     }
 
+    .leaf {
+        width: 56px;
+        margin: 0 20px;
+        position: relative;
+        display: inline-block;
+        bottom: 0;
+        animation: wave 4s infinite ease-in-out;
+    }
+
+    /* 各画像のサイズ */
+    .leaf:nth-child(even) {
+        width: 32px;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+
+
     @keyframes move {
         0% {
             transform: translateX(0);
         }
-    
+
         100% {
             transform: translateX(-100%);
             /* 新しいコンテナ幅に合わせて調整 */
         }
     }
-    
+
 }
